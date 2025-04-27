@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Practice-Student</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <label for="emailaddress">Email</label>
+        <input
+          type="email"
+          id="emailaddress"
+          placeholder="Please enter your email"
+          name="email"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password enter here"
+          name="pass"
+        />
+      </div>
+      <div>
+        <label for="phonenumber">Phone Number</label>
+        <input
+          type="number"
+          id="phonenumber"
+          placeholder="Please enter your phone no"
+        />
+      </div>
+      <div>
+        <label for="calenderDate">Date</label>
+        <input type="date" id="calenderDate" />
+      </div>
+      <button type="submit">Log in</button>
+      <br />
+      <button type="button" onclick="alert('You clicked me!')">click me</button>
+      <br />
+      <button type="reset">Clear my form</button>
+      <hr />
+      <div>
+        <input type="checkbox" name="age" id="age" />
+        <label for="age">I am 18+ years old</label>
+      </div>
+      <button type="submit">search</button>
+      <hr />
+      <!-- this is radio button practice -->
+      <div>
+        <input type="radio" name="fruits" id="apple" value="apple" />
+        <label for="apple">apple</label>
+        <input type="radio" name="fruits" id="mango" value="mango"//>
+        <label for="mango">mango</label>
+        <input type="radio" name="fruits" id="banana" value="banana"//>
+        <label for="banana">banana</label>
+      </div>
+      <button type="submit">search</button>
+      <hr />
+      <div>
+        <label for="profession">Choose your profession</label>
+        <select name="profession" id="profession">
+          <option></option>
+          <option value="stu">student</option>
+          <option value="doc">doctor</option>
+          <option value="eng">engineer</option>
+          <option value="arc">architect</option>
+          <option value="house">home maker</option>
+        </select>
+      </div>
+      <div>
+        <label for="vol">Volume</label>
+        <input type="range" min="0" max="100" step="10" name="vol" />
+        <button type="submit">search</button>
+      </div>
+      <div>
+        Please enter your feedback
+        <textarea rows="5" cols="100" name="feedback"></textarea>
+        <button type="submit">Feedback submit</button>
+      </div>
+    </form>
+    <hr />
+    <form action="https://www.youtube.com/results">
+      <input type="text" placeholder="search in youtube" name="search_query" />
+      <br />
+      <button type="submit">search</button>
+      <button type="reset">clear</button>
+    </form>
+  </body>
+</html>
